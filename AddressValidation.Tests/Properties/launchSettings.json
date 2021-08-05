@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "AddressValidation.Tests": {
+      "commandName": "Project"
+    }
+  }
+}
