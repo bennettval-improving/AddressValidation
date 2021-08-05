@@ -49,7 +49,4 @@ steps:
     azureSubscription: 'bobsStuff'
     appType: 'apiApp'
     WebAppName: 'bennett-validates-addresses'
-    deployToSlotOrASE: true
-    ResourceGroupName: 'BobsStuff'
-    SlotName: 'production'
     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
