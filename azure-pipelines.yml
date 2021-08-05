@@ -43,10 +43,13 @@ steps:
 - script: tar -a -c -C build -f Application.zip *.*
   displayName: Zip
 
-- task: AzureWebApp@1
-  displayName: 'Deploy AddressValidation Web API'
+- task: AzureRmWebAppDeployment@4
   inputs:
-    azureSubscription: bobsStuff
-    appName: bennett-validates-addresses
-    appType: apiApp
-    package: ./**/*.zip
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'bobsStuff'
+    appType: 'apiApp'
+    WebAppName: 'bennett-validates-addresses'
+    deployToSlotOrASE: true
+    ResourceGroupName: 'BobsStuff'
+    SlotName: 'production'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
