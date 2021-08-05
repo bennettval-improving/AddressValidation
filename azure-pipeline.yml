@@ -43,7 +43,7 @@ steps:
 - script: tar -a -c -C build -f Application.zip *.*
   displayName: Zip
 
-- task: AzureApiApp@1
+- task: AzureWebApp@1
   displayName: 'Deploy AddressValidation Web API'
   inputs:
     azureSubscription: bobsStuff
