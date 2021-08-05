@@ -7,17 +7,17 @@ namespace AddressValidation.Tests
     [TestClass]
     public class AddressValidationServiceTests
     {
-        [TestMethod]
-        public void AddressValidationService_ValidateAddress_ShouldDoSomething()
-        {
-            // arrange
-            var address = new Address();
-            var target = new AddressValidationService();
+        //[TestMethod]
+        //public void AddressValidationService_ValidateAddress_ShouldDoSomething()
+        //{
+        //    // arrange
+        //    var address = new Address();
+        //    var target = new AddressValidationService();
 
-            // act
-            var result = target.ValidateAddressAsync(address);
+        //    // act
+        //    var result = target.ValidateAddressAsync(address);
 
-            // assert
-        }
+        //    // assert
+        //}
     }
 }
